@@ -1,0 +1,23 @@
+{
+  "name": "fs_website",
+  "version": "1.0.0",
+  "description": "Website for garnering business and displaying development experience",
+  "main": "server.js",
+  "scripts": {
+    "test": "run",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mforrest20/fs_website.git"
+  },
+  "author": "Steven Sammon,Matthew Forrest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mforrest20/fs_website/issues"
+  },
+  "homepage": "https://github.com/Mforrest20/fs_website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
