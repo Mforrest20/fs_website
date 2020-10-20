@@ -1,13 +1,16 @@
-  
-const express = require('express');
-const path = require('path');
+var express = require('express');
+var exphbs  = require('express-handlebars');
 
-const app = express();
+var app = express();
 
-//The static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
 
-const PORT = process.env.PORT || 5000
+app.get('/', function (req, res) {
+    res.render('home');
+});
+
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, function(){
    console.log("\nSERVER RUNNING ON PORT " + PORT); 
