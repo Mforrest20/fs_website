@@ -1,14 +1,15 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
 
+var htmlrouter = require('./controller/html-router');
+
 var app = express();
+
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-app.get('/', function (req, res) {
-    res.render('home');
-});
+app.use('/', htmlrouter);
 
 const PORT = process.env.PORT || 3000
 
