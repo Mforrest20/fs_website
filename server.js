@@ -1,5 +1,9 @@
-var express = require('express');
-var exphbs  = require('express-handlebars');
+const express = require('express');
+const exphbs  = require('express-handlebars');
+const popper = require('popper.js');
+const jq = require('jquery');
+//const bootstrap = require('bootstrap');
+
 
 var htmlrouter = require('./controller/html-router');
 
